@@ -1,0 +1,56 @@
+body {
+    background-color: white;
+  }
+  header {
+    margin: 15px;
+  }
+  main {
+    margin: 20px 60px 0px 60px;
+    padding: 20px;
+  }
+  p {
+    font-family: 'Georgia', sans-serif;
+  }
+  
+  .image {
+    animation: onLoad 2s cubic-bezier(0.4, 0.02, 0.57, 0.82);
+  }
+  .ui.segment {
+    background: white;
+    box-shadow: none;
+    border: none;
+  }
+
+  .ui.horizontal.list {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+    h1.ui.header {
+      width: unset;
+    }
+    i.big.icon {
+      font-size: 1.5em;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    main {
+      margin: 0;
+      padding: 0;
+    }
+    .column.right.aligned {
+      text-align: left !important;
+      }
+  }
+  
+  @keyframes onLoad {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
